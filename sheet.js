@@ -1,20 +1,3 @@
-// 選擇所有的 checkbox
-const checkboxes = document.querySelectorAll('.gender-options input[type="radio"]');
-
-// 對每個 checkbox 添加事件監聽器
-checkboxes.forEach(function(checkbox) {
-    checkbox.addEventListener('change', function() {
-        // 檢查 checkbox 是否被選中
-        if (this.checked) {
-            // 將 checkbox 的父級標籤（label）的類名設置為 'checked'
-            this.parentNode.classList.add('checked');
-        } else {
-            // 如果未選中，則移除 'checked' 類名
-            this.parentNode.classList.remove('checked');
-        }
-    });
-});
-
 const scriptURL = 'https://script.google.com/macros/s/AKfycbwhjz0OXaTNTEk-G1QiDC7bs-bdgxijmDSn-9PpVL7GlLO8SfeBrv2iqofIbnBfoxkUYw/exec'
 
 const form = document.forms['contact-form'];

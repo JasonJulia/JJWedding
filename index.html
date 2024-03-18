@@ -1,73 +1,52 @@
 <!DOCTYPE html>
-<!-- Created By CodingLab - www.codinglabweb.com -->
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="UTF-8">
-    <!---<title> Responsive Registration Form | CodingLab </title>--->
+<html>
+<head>
+	<meta charset="UTF-8">
+    <title>Your Page Title</title>
     <link rel="stylesheet" href="sheet.css">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Registration Form</title>
-   </head>
+</head>
 <body>
 	<div class="top-title">
         Wedding Invitation
     </div>
-  <div class="container">
-    <div class="title">Registration</div>
-    <div class="content">
+    <div class="container">
 		<form method="post" action="https://script.google.com/macros/s/AKfycbwhjz0OXaTNTEk-G1QiDC7bs-bdgxijmDSn-9PpVL7GlLO8SfeBrv2iqofIbnBfoxkUYw/exec" name="contact-form">
-        <div class="user-details">
-          <div class="input-box">
-            <span class="details">Full Name</span>
-            <input type="text" name="your-name" placeholder="Enter your name" required>
-          </div>
-          <div class="input-box">
-            <span class="details">Username</span>
-            <input type="text" name="your-number" placeholder="Enter your username" required>
-          </div>
-          <div class="input-box">
-            <span class="details">Email</span>
-            <input type="text" name="your-email"  placeholder="Enter your email" required>
-          </div>
-          <div class="input-box">
-            <span class="details">Phone Number</span>
-            <input type="text" name="message" placeholder="Enter your number" required>
-          </div>
-          <div class="input-box">
-            <span class="details">Password</span>
-            <input type="text" placeholder="Enter your password" required>
-          </div>
-          <div class="input-box">
-            <span class="details">Confirm Password</span>
-            <input type="text" placeholder="Confirm your password" required>
-          </div>
-        </div>
-        <div class="gender-details">
-          <input type="radio" name="gender" id="dot-1" value="a">
-          <input type="radio" name="gender" id="dot-2" value="b">
-          <input type="radio" name="gender" id="dot-3" value="c">
-          <span class="gender-title">Gender</span>
-          <div class="category">
-            <label for="dot-1">
-            <span class="dot one"></span>
-            <span class="gender">Male</span>
-          </label>
-          <label for="dot-2">
-            <span class="dot two"></span>
-            <span class="gender">Female</span>
-          </label>
-          <label for="dot-3">
-            <span class="dot three"></span>
-            <span class="gender">Prefer not to say</span>
-            </label>
-          </div>
-        </div>
-        <div class="button">
-          <input type="submit" value="Register">
-        </div>
-      </form>
-    </div>
-  </div>
-  <script src="sheet.js"></script>
+			<h4>Contact Us</h4>
+			<input type="text" name="your-name" placeholder="Name">
+			<input type="text" name="your-number" placeholder="Number">
+			<input type="email" name="your-email" placeholder="Email">
+			<div class="guest-side">
+				<input type="radio" name="side" id="dot-1" value="a">
+				<input type="radio" name="side" id="dot-2" value="b">
+				<span class="side-title">關係</span>
+				<div class="category">
+				  <label for="dot-1">
+				  <span class="dot one"></span>
+				  <span class="side">男方親友</span>
+				</label>
+				<label for="dot-2">
+				  <span class="dot two"></span>
+				  <span class="side">女方親友</span>
+				</label>
+				</div>
+			<div class="attendance-details">
+				<input type="radio" name="attendance" id="adot-1" value="a">
+				<input type="radio" name="attendance" id="adot-2" value="b">
+				<span class="attendance-title">是否出席婚宴</span>
+				<div class="a-category">
+				  <label for="adot-1">
+				  <span class="dot one"></span>
+				  <span class="attendance">會出席</span>
+				</label>
+				<label for="adot-2">
+				  <span class="dot two"></span>
+				  <span class="attendance">有事不克前往</span>
+				</label>
+				</div>
+			<textarea name="message" rows="7" placeholder="Your Message"></textarea>
+			<input type="submit" value="Submit" id="submit">
+		</form>
+	</div>
+    <script src="sheet.js"></script>
 </body>
 </html>
