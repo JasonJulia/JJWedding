@@ -85,15 +85,15 @@ form .input-box span.details{
 }
 .input-box input:focus,
 .input-box input:valid{
-  border-color: #9b59b6;
+  border-color: #d9d9d9;
 }
  form .guest-side .side-title{
-  font-size: 20px;
-  font-weight: 500;
+  font-size: 15px;
+  font-weight: 450;
  }
  form .category{
    display: flex;
-   width: 80%;
+   width: 56%;
    margin: 14px 0 ;
    justify-content: space-between;
  }
@@ -117,6 +117,96 @@ form .input-box span.details{
    border-color: #d9d9d9;
  }
 
+ form .attendance-details .attendance-title{
+  font-size: 15px;
+  font-weight: 450;
+ }
+ form .a-category{
+   display: flex;
+   width: 56%;
+   margin: 14px 0 ;
+   justify-content: space-between;
+ }
+ form .a-category label{
+   display: flex;
+   align-items: center;
+   cursor: pointer;
+ }
+ form .a-category label .dot{
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background: #d9d9d9;
+  border: 5px solid transparent;
+  transition: all 0.3s ease;
+}
+ #adot-1:checked ~ .a-category label .one,
+ #adot-2:checked ~ .a-category label .two{
+   background: #414041;
+   border-color: #d9d9d9;
+ }
+
+ form .invitation-details .invitation-title{
+  font-size: 15px;
+  font-weight: 450;
+ }
+ form .i-category{
+   display: flex;
+   width: 56%;
+   margin: 14px 0 ;
+   justify-content: space-between;
+ }
+ form .i-category label{
+   display: flex;
+   align-items: center;
+   cursor: pointer;
+ }
+ form .i-category label .dot{
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background: #d9d9d9;
+  border: 5px solid transparent;
+  transition: all 0.3s ease;
+}
+ #idot-1:checked ~ .i-category label .one,
+ #idot-2:checked ~ .i-category label .two{
+   background: #414041;
+   border-color: #d9d9d9;
+ }
+
+ form .stay-details .stay-title{
+  font-size: 15px;
+  font-weight: 450;
+ }
+ form .s-category{
+   display: flex;
+   width: 56%;
+   margin: 14px 0 ;
+   justify-content: space-between;
+ }
+ form .s-category label{
+   display: flex;
+   align-items: center;
+   cursor: pointer;
+ }
+ form .s-category label .dot{
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background: #d9d9d9;
+  border: 5px solid transparent;
+  transition: all 0.3s ease;
+}
+ #sdot-1:checked ~ .s-category label .one,
+ #sdot-2:checked ~ .s-category label .two{
+   background: #414041;
+   border-color: #d9d9d9;
+ }
+ 
  form input[type="radio"]{
    display: none;
  }
@@ -147,9 +237,6 @@ form .input-box span.details{
 }
 form .user-details .input-box{
     margin-bottom: 15px;
-    width: 100%;
-  }
-  form .category{
     width: 100%;
   }
 }
