@@ -52,7 +52,7 @@
   height: 3px;
   width: 30px;
   border-radius: 5px;
-  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  background: linear-gradient(135deg, #71b7e6, #6a626d);
 }
 .content form .user-details{
   display: flex;
