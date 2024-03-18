@@ -5,22 +5,37 @@
   box-sizing: border-box;
   font-family: 'Poppins',sans-serif;
 }
-body{
-  height: 45vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 5px;
-  background-image: url('background.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: left center;
+  body {
+    margin: 0;
+    padding: 0;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 150vh; /* Set the height of the body to the height of the viewport */
+}
+@media only screen and (max-width: 768px) {
+  body {
+      background-image: url('background-mobile.jpg');
+  }
 }
 
-@media only screen and (max-width: 600px) {
-    body {
-        background-position: left top;
-    }
+/* 使用相对单位设置背景图像大小和位置 */
+@media only screen and (max-width: 768px) {
+  body {
+      background-size: cover;
+      background-position: center; /* 居中显示 */
+  }
+  .container{
+    max-width: 550px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.7); 
+    padding: 25px 60px;
+    margin-top: 100px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+    position: relative;
+  }
 }
 
 .container{
@@ -28,10 +43,10 @@ body{
   width: 100%;
   background-color: rgba(255, 255, 255, 0.7); 
   padding: 25px 60px;
-  margin-top: 250px;
+  margin: 0 auto; 
+  margin-top: 100px;
   border-radius: 5px;
   box-shadow: 0 5px 10px rgba(0,0,0,0.15);
-  position: relative;
 }
 .container .title{
   font-size: 25px;
