@@ -15,7 +15,7 @@
 
 @media only screen and (max-width: 768px) {
   body {
-      background-image: url('background-mobile-2.jpg');
+      background-image: url('background-mobile.jpg');
       background-size: cover;
   }
 }
