@@ -315,6 +315,10 @@ form .user-details .input-box{
   animation: pulse 1s infinite;
 }
 
+
+form .button input.no-hover:hover {
+  background: linear-gradient(135deg, #bbc4ca, #837f84);
+}
 /*
 
 form .button{

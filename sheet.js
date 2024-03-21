@@ -32,9 +32,11 @@ form.addEventListener('submit', async (e) => {
 
   hasSubmitted = true;
   submitButton.disabled = true;
+  submitButton.classList.add('no-hover');
   statusLabel.style.display = 'block'
   submitButton.value = '提交中'
   statusLabel.textContent = '提交中 請稍等片刻';
+  
   try {
     const response = await fetch(scriptURL, {
       method: 'POST',
@@ -50,6 +52,7 @@ form.addEventListener('submit', async (e) => {
       submitButton.disabled = false;
       // 在提交成功後添加“Submit Again”按鈕
       submitButton.value = '點擊提交其他份';
+      submitButton.classList.remove('no-hover');
       submitButton.addEventListener('click', () => {
         form.reset(); // 重置表單
         statusLabel.style.display = 'none'; // 隱藏提交狀態的標籤
