@@ -26,6 +26,24 @@ statusMessage.classList.add('status-message');
 
 let hasSubmitted = false;
 
+const showFormButton = document.getElementById('showFormButton');
+const container = document.getElementById('containerId');
+const buttonContainer = document.getElementById('topButton');
+
+showFormButton.addEventListener('click', function() {
+  buttonContainer.style.display = 'none';
+  container.style.display = 'block';
+  document.body.style.backgroundImage = "url('init.jpg')";
+  if (window.innerWidth <= 768) {
+    // Mobile phone mode
+    document.body.style.backgroundImage = "url('background-mobile.jpg')";
+    document.body.style.marginTop = '5px';
+  } else {
+    // Desktop website
+    document.body.style.backgroundImage = "url('init.jpg')";
+  }
+});
+
 form.addEventListener('submit', async (e) => {
   e.preventDefault();
 
