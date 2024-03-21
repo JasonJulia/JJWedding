@@ -36,7 +36,7 @@ form.addEventListener('submit', async (e) => {
   hasSubmitted = true;
 
   submitButton.style.display = 'none';
-  statusLabel.textContent = 'Submitting...';
+  statusLabel.textContent = '提交中 請稍等片刻';
   statusLabel.style.display = 'inline-block';
 
   try {
@@ -46,7 +46,7 @@ form.addEventListener('submit', async (e) => {
     });
 
     if (response.ok) {
-      statusLabel.textContent = 'Submit successful!';
+      statusLabel.textContent = '提交成功 9/7號與您相見';
       statusMessage.classList.add('success');
       form.querySelectorAll('input, textarea').forEach(field => {
         field.disabled = true; // 禁用所有字段
@@ -54,7 +54,7 @@ form.addEventListener('submit', async (e) => {
 
       // 在提交成功後添加“Submit Again”按鈕
       const submitAgainButton = document.createElement('button');
-      submitAgainButton.textContent = 'Submit Again';
+      submitAgainButton.textContent = '提交其他份';
       submitAgainButton.addEventListener('click', () => {
         form.reset(); // 重置表單
         statusLabel.style.display = 'none'; // 隱藏提交狀態的標籤
