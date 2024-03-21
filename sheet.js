@@ -19,10 +19,7 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbwhjz0OXaTNTEk-G1QiDC
 
 const form = document.forms['contact-form'];
 const submitButton = form.querySelector('input[type="submit"]');
-const statusLabel = document.createElement('label');
-statusLabel.style.display = 'none';
-const statusMessage = document.createElement('div');
-statusMessage.classList.add('status-message');
+const statusLabel = document.querySelector('.submited-text');
 
 let hasSubmitted = false;
 
@@ -34,11 +31,10 @@ form.addEventListener('submit', async (e) => {
   }
 
   hasSubmitted = true;
-
-  submitButton.style.display = 'none';
+  submitButton.disabled = true;
+  statusLabel.style.display = 'block'
+  submitButton.value = '提交中'
   statusLabel.textContent = '提交中 請稍等片刻';
-  statusLabel.style.display = 'inline-block';
-
   try {
     const response = await fetch(scriptURL, {
       method: 'POST',
@@ -46,20 +42,18 @@ form.addEventListener('submit', async (e) => {
     });
 
     if (response.ok) {
-      statusLabel.textContent = '提交成功 9/7號與您相見';
-      statusMessage.classList.add('success');
-      form.querySelectorAll('input, textarea').forEach(field => {
+        statusLabel.style.animation = 'none';
+        statusLabel.textContent = '提交成功 9/7號與您相見';
+        form.querySelectorAll('input, textarea').forEach(field => {
         field.disabled = true; // 禁用所有字段
-      });
-
+        });
+      submitButton.disabled = false;
       // 在提交成功後添加“Submit Again”按鈕
-      const submitAgainButton = document.createElement('button');
-      submitAgainButton.textContent = '提交其他份';
-      submitAgainButton.addEventListener('click', () => {
+      submitButton.value = '點擊提交其他份';
+      submitButton.addEventListener('click', () => {
         form.reset(); // 重置表單
         statusLabel.style.display = 'none'; // 隱藏提交狀態的標籤
         submitButton.style.display = 'inline-block'; // 顯示提交按鈕
-        submitAgainButton.style.display = 'none'; // 隱藏 Submit Again 按鈕
         form.querySelectorAll('input, textarea').forEach(field => {
           field.disabled = false; // 啟用所有字段
         });
@@ -67,13 +61,11 @@ form.addEventListener('submit', async (e) => {
       });
 
       // 添加到表單中
-      form.appendChild(submitAgainButton);
     } else {
       throw new Error('Submission failed');
     }
   } catch (error) {
     statusLabel.textContent = 'Error! Please try again later.';
-    statusMessage.classList.add('error');
     hasSubmitted = false;
   }
 });
