@@ -20,9 +20,8 @@
 @media only screen and (max-width: 768px) {
   body {
       background-image: url('small-mobile.jpg');
-      background-size: cover;
       background-position: left; /* 居中显示 */
-      margin-top: 5px;
+      margin-bottom: 15px;
   }
   .container{
     /*margin: 0 0 0; 
