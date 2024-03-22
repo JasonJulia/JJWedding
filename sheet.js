@@ -49,20 +49,8 @@ form.addEventListener('submit', async (e) => {
         form.querySelectorAll('input, textarea').forEach(field => {
         field.disabled = true; // 禁用所有字段
         });
-      submitButton.disabled = false;
       // 在提交成功後添加“Submit Again”按鈕
-      submitButton.value = '點擊提交其他份';
-      submitButton.classList.remove('no-hover');
-      submitButton.addEventListener('click', () => {
-        form.reset(); // 重置表單
-        statusLabel.style.display = 'none'; // 隱藏提交狀態的標籤
-        submitButton.style.display = 'inline-block'; // 顯示提交按鈕
-        form.querySelectorAll('input, textarea').forEach(field => {
-          field.disabled = false; // 啟用所有字段
-        });
-        window.location.reload(); // 重新加載網頁
-      });
-
+      submitButton.value = '提交成功！';
       // 添加到表單中
     } else {
       throw new Error('Submission failed');
