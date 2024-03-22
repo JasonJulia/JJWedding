@@ -16,17 +16,10 @@
     margin-top: 0px;
 }
 
-@media only screen and (max-width: 768px) {
-  body {
-      background-image: url('form-background-mobile.jpg');
-      background-size: cover;
-  }
-}
-
 /* 使用相对单位设置背景图像大小和位置 */
 @media only screen and (max-width: 768px) {
   body {
-      background-image: url('form-background-mobile.jpg');
+      background-image: url('small-mobile.jpg');
       background-size: cover;
       background-position: left; /* 居中显示 */
       margin-top: 5px;
