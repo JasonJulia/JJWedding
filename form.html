@@ -12,12 +12,13 @@
   <h1>Wedding Invitation</h1>
       <nav class="navbar">
         <ul>
-            <li><a href="index.html">首頁</a></li>
-            <li><a href="location.html">婚禮資訊</a></li>
+          <li><a href="index.html">首頁</a></li>
+          <li><a href="form.html">填寫報名表</a></li>
+          <li><a href="location.html">婚禮資訊</a></li>
         </ul>
     </nav>
   <div class="container" id="containerId"> 
-    <div class="title">Registration</div>
+    <div class="title">報名表</div>
     <div class="content">
 		<form method="post" action="https://script.google.com/macros/s/AKfycbwhjz0OXaTNTEk-G1QiDC7bs-bdgxijmDSn-9PpVL7GlLO8SfeBrv2iqofIbnBfoxkUYw/exec" name="contact-form">
         <div class="user-details">
@@ -35,9 +36,9 @@
           </div>
       </div>
       <div class="guest-side">
-				<input type="radio" name="side" id="dot-1" value="a">
-				<input type="radio" name="side" id="dot-2" value="b">
-				<span class="side-title">關係</span>
+				<input type="radio" name="side" id="dot-1" value="man" >
+				<input type="radio" name="side" id="dot-2" value="woman">
+				<span class="side-title">關係*</span>
 				<div class="category">
 				  <label for="dot-1">
 				  <span class="dot one"></span>
@@ -49,9 +50,9 @@
 				</label>
 				</div>
         <div class="attendance-details">
-          <input type="radio" name="attendance" id="adot-1" value="a">
-          <input type="radio" name="attendance" id="adot-2" value="b">
-          <span class="attendance-title">是否出席婚宴</span>
+          <input type="radio" name="attendance" id="adot-1" value="yes">
+          <input type="radio" name="attendance" id="adot-2" value="no">
+          <span class="attendance-title">是否出席婚宴*</span>
           <div class="a-category">
             <label for="adot-1">
             <span class="dot one"></span>
@@ -63,9 +64,9 @@
           </label>
           </div>
           <div class="invitation-details">
-            <input type="radio" name="invitation" id="idot-1" value="a">
-            <input type="radio" name="invitation" id="idot-2" value="b">
-            <span class="invitation-title">是否需要紙本喜帖</span>
+            <input type="radio" name="invitation" id="idot-1" value="yes">
+            <input type="radio" name="invitation" id="idot-2" value="no">
+            <span class="invitation-title">是否需要紙本喜帖*</span>
             <div class="i-category">
               <label for="idot-1">
               <span class="dot one"></span>
@@ -77,32 +78,32 @@
             </label>
             </div>
             <div class="stay-details">
-              <input type="radio" name="stay" id="sdot-1" value="a">
-              <input type="radio" name="stay" id="sdot-2" value="b">
-              <span class="stay-title">是否需要住宿(與飯店配合當天一晚4500元)</span>
+              <input type="radio" name="stay" id="sdot-1" value="yes">
+              <input type="radio" name="stay" id="sdot-2" value="no">
+              <span class="stay-title">是否需要住宿(與飯店配合當天一晚4000元含早餐)</span>
               <div class="s-category">
                 <label for="sdot-1">
                 <span class="dot one"></span>
-                <span class="invitation">是</span>
+                <span class="stay">是</span>
               </label>
               <label for="sdot-2">
                 <span class="dot two"></span>
-                <span class="invitation">否</span>
+                <span class="stay">否</span>
               </label>
               </div>
               <div class="user-details">
               <div class="input-box">
-                <input name="message" rows="20" placeholder="Your Message">
+                <input name="message" rows="20" placeholder="想說的話">
               </div>
             </div>
+            <div>
+              <span class="submited-text">提交中 請稍等片刻</span>          
+              </div>
         <div class="button">
           <input type="submit" value="提交">
         </div>
       </form>
     </div>
-    <div>
-      <span class="submited-text">提交中 請稍等片刻</span>          
-      </div>
   </div>
   <script src="sheet.js"></script>
 </body>

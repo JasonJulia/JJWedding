@@ -29,7 +29,51 @@ form.addEventListener('submit', async (e) => {
   if (hasSubmitted) {
     return;
   }
+  statusLabel.style.display = 'none'
+  statusLabel.style.color = 'black'
+    const guestSideRadios = form.querySelectorAll('input[name="side"]');
+    let guestSideChecked = false;
+    guestSideRadios.forEach(function(radio) {
+            if (radio.checked) {
+                guestSideChecked = true;
+            }
+        });
 
+        if (!guestSideChecked) {
+            statusLabel.style.display = 'block'
+            statusLabel.style.color = 'red'
+            statusLabel.textContent = '請填寫關係欄'
+            return;
+        } 
+    const attendanceRadios = form.querySelectorAll('input[name="attendance"]');
+    let attendanceChecked = false;
+    attendanceRadios.forEach(function(radio) {
+        if (radio.checked) {
+            attendanceChecked = true;
+        }
+    });
+
+    if (!attendanceChecked) {
+        statusLabel.style.display = 'block'
+        statusLabel.style.color = 'red'
+        statusLabel.textContent = '請填寫是否出席婚宴'
+        return;
+    } 
+
+    const invitationRadios = form.querySelectorAll('input[name="invitation"]');
+    let invitationChecked = false;
+    invitationRadios.forEach(function(radio) {
+        if (radio.checked) {
+            invitationChecked = true;
+        }
+    });
+
+    if (!invitationChecked) {
+        statusLabel.style.display = 'block'
+        statusLabel.style.color = 'red'
+        statusLabel.textContent = '請填寫是否需要紙本喜帖'
+        return;
+    } 
   hasSubmitted = true;
   submitButton.disabled = true;
   submitButton.classList.add('no-hover');
@@ -67,4 +111,5 @@ form.querySelectorAll('input, textarea').forEach(field => {
 });
 
 form.appendChild(statusLabel);
-form.appendChild(statusMessage);
+
+
