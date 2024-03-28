@@ -139,9 +139,11 @@ form .input-box span.details{
   font-size: 15px;
   font-weight: 450;
  }
+
+
  form .category{
    display: flex;
-   width: 56%;
+   width: 80%;
    margin: 14px 0 ;
    justify-content: space-between;
  }
@@ -154,14 +156,13 @@ form .input-box span.details{
   height: 18px;
   width: 18px;
   border-radius: 50%;
-  margin-right: 10px;
   background: #d9d9d9;
   border: 5px solid transparent;
   transition: all 0.3s ease;
 }
  #dot-1:checked ~ .category label .one,
  #dot-2:checked ~ .category label .two{
-   background: #9b59b6;
+   background: #414041;
    border-color: #d9d9d9;
  }
 
@@ -171,7 +172,7 @@ form .input-box span.details{
  }
  form .a-category{
    display: flex;
-   width: 56%;
+   width: 80%;
    margin: 14px 0 ;
    justify-content: space-between;
  }
@@ -184,7 +185,6 @@ form .input-box span.details{
   height: 18px;
   width: 18px;
   border-radius: 50%;
-  margin-right: 10px;
   background: #d9d9d9;
   border: 5px solid transparent;
   transition: all 0.3s ease;
@@ -201,7 +201,7 @@ form .input-box span.details{
  }
  form .i-category{
    display: flex;
-   width: 56%;
+   width: 70%;
    margin: 14px 0 ;
    justify-content: space-between;
  }
@@ -214,7 +214,6 @@ form .input-box span.details{
   height: 18px;
   width: 18px;
   border-radius: 50%;
-  margin-right: 10px;
   background: #d9d9d9;
   border: 5px solid transparent;
   transition: all 0.3s ease;
@@ -244,7 +243,6 @@ form .input-box span.details{
   height: 18px;
   width: 18px;
   border-radius: 50%;
-  margin-right: 10px;
   background: #d9d9d9;
   border: 5px solid transparent;
   transition: all 0.3s ease;
@@ -310,6 +308,12 @@ form .user-details .input-box{
 
 form .button input.no-hover:hover {
   background: linear-gradient(135deg, #bbc4ca, #837f84);
+}
+
+.navbar li{
+  float: left;
+  font-family: "Microsoft JhengHei";
+  font-size: 14px;
 }
 /*
 

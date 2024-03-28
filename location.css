@@ -113,3 +113,8 @@ h1{
   align-items: center;
 }
 
+.navbar li{
+  float: left;
+  font-family: "Microsoft JhengHei";
+  font-size: 14px;
+}

@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins',sans-serif;
 }
   body {
     margin: 0;
@@ -54,6 +53,7 @@ h1{
   padding: 0px;
   margin: 0px;
   overflow: hidden;
+  
 }
 .navbar a{
   color: white;
@@ -67,4 +67,6 @@ h1{
 }
 .navbar li{
   float: left;
+  font-family: "Microsoft JhengHei";
+  font-size: 14px;
 }

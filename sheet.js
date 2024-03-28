@@ -74,6 +74,21 @@ form.addEventListener('submit', async (e) => {
         statusLabel.textContent = '請填寫是否需要紙本喜帖'
         return;
     } 
+
+    const stayRadios = form.querySelectorAll('input[name="stay"]');
+    let stayChecked = false;
+    stayRadios.forEach(function(radio) {
+        if (radio.checked) {
+            stayChecked = true;
+        }
+    });
+
+    if (!stayChecked) {
+        statusLabel.style.display = 'block'
+        statusLabel.style.color = 'red'
+        statusLabel.textContent = '請填寫是否需要住宿'
+        return;
+    } 
   hasSubmitted = true;
   submitButton.disabled = true;
   submitButton.classList.add('no-hover');

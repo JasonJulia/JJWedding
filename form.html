@@ -15,6 +15,7 @@
           <li><a href="index.html">首頁</a></li>
           <li><a href="form.html">填寫報名表</a></li>
           <li><a href="location.html">婚禮資訊</a></li>
+          <li><a href="gallery.html">婚紗照</a></li>
         </ul>
     </nav>
   <div class="container" id="containerId"> 
@@ -31,14 +32,18 @@
             <input type="text" name="number" placeholder="請輸入你的電話">
           </div>
           <div class="input-box">
-            <span class="details">電子信箱</span>
-            <input type="email" name="email" placeholder="請輸入你的信箱">
+            <span class="details">電子信箱*</span>
+            <input type="email" name="email" placeholder="接收電子喜帖的信箱" required>
+          </div>
+          <div class="input-box">
+            <span class="details">地址</span>
+            <input type="email" name="email" placeholder="需要紙本喜帖者請填寫">
           </div>
       </div>
       <div class="guest-side">
 				<input type="radio" name="side" id="dot-1" value="man" >
 				<input type="radio" name="side" id="dot-2" value="woman">
-				<span class="side-title">關係*</span>
+				<span class="side-title" >- 關係*</span>
 				<div class="category">
 				  <label for="dot-1">
 				  <span class="dot one"></span>
@@ -52,7 +57,7 @@
         <div class="attendance-details">
           <input type="radio" name="attendance" id="adot-1" value="yes">
           <input type="radio" name="attendance" id="adot-2" value="no">
-          <span class="attendance-title">是否出席婚宴*</span>
+          <span class="attendance-title">- 是否出席婚宴*</span>
           <div class="a-category">
             <label for="adot-1">
             <span class="dot one"></span>
@@ -63,10 +68,11 @@
             <span class="attendance">有事不克前往</span>
           </label>
           </div>
+        </div>
           <div class="invitation-details">
             <input type="radio" name="invitation" id="idot-1" value="yes">
             <input type="radio" name="invitation" id="idot-2" value="no">
-            <span class="invitation-title">是否需要紙本喜帖*</span>
+            <span class="invitation-title">- 是否需要紙本喜帖*</span>
             <div class="i-category">
               <label for="idot-1">
               <span class="dot one"></span>
@@ -77,10 +83,11 @@
               <span class="invitation">否</span>
             </label>
             </div>
+          </div>
             <div class="stay-details">
               <input type="radio" name="stay" id="sdot-1" value="yes">
               <input type="radio" name="stay" id="sdot-2" value="no">
-              <span class="stay-title">是否需要住宿(與飯店配合當天一晚4000元含早餐)</span>
+              <span class="stay-title">- 當日是否需要住宿* <br>房型: 維多麗亞豪華客房雙人房 (飯店配合價: $4000/晚, 含稅含早餐)</span>
               <div class="s-category">
                 <label for="sdot-1">
                 <span class="dot one"></span>
