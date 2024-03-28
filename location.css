@@ -8,7 +8,7 @@
   body {
     margin: 0;
     padding: 0;
-    background-image: url('init.jpg');
+    background-image: url('https://res.cloudinary.com/dmxjvj0mh/image/upload/v1711644137/init.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }

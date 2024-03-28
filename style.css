@@ -10,7 +10,7 @@
   body {
     margin: 0;
     padding: 0;
-    background-image: url('init.jpg');
+    background-image: url('https://res.cloudinary.com/dmxjvj0mh/image/upload/v1711644137/init.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     margin-top: 0px;
@@ -19,7 +19,7 @@
 /* 使用相对单位设置背景图像大小和位置 */
 @media only screen and (max-width: 768px) {
   body {
-      background-image: url('small-mobile.jpg');
+      background-image: url('https://res.cloudinary.com/dmxjvj0mh/image/upload/v1711643834/small-mobile.jpg');
       background-position: left; /* 居中显示 */
       margin-bottom: 15px;
   }
