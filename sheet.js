@@ -148,9 +148,9 @@ const additionalElements = document.querySelectorAll('.hideable');
     if (response.ok) {
         statusLabel.style.animation = 'none';
         if (!attend ) {
-            statusLabel.innerHTML = '提交成功 感謝您的提交 <img src="https://res.cloudinary.com/dmxjvj0mh/image/upload/v1711732386/buddy_icon.png" alt="Icon" style="width: 50px; height: 50px;">';
+            statusLabel.innerHTML = '提交成功 感謝您的提交 <img src="https://res.cloudinary.com/dmxjvj0mh/image/upload/v1711734210/buddy_icon.png" alt="Icon" style="width: 50px; height: 45px;">';
         } else{
-            statusLabel.innerHTML = '提交成功 9/7號與您相見 <img src="https://res.cloudinary.com/dmxjvj0mh/image/upload/v1711732386/buddy_icon.png" alt="Icon" style="width: 50px; height: 50px;">';
+            statusLabel.innerHTML = '提交成功 9/7號與您相見 <img src="https://res.cloudinary.com/dmxjvj0mh/image/upload/v1711734210/buddy_icon.png" alt="Icon" style="width: 50px; height: 50px;">';
 
         }
         form.querySelectorAll('input, textarea').forEach(field => {
