@@ -8,14 +8,18 @@
   body {
     margin: 0;
     padding: 0;
-    background-image: url('https://res.cloudinary.com/dmxjvj0mh/image/upload/v1711644137/init.jpg');
+    background-image: url('init.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
+/*https://res.cloudinary.com/dmxjvj0mh/image/upload/v1711644137/init.jpg
+
+https://res.cloudinary.com/dmxjvj0mh/image/upload/v1711643834/small-mobile.jpg
+*/
 
 @media only screen and (max-width: 768px) {
   body {
-      background-image: url('https://res.cloudinary.com/dmxjvj0mh/image/upload/v1711643834/small-mobile.jpg');
+      background-image: url('small-mobile.jpg');
       background-size: cover;
   }
 }
