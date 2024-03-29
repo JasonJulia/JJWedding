@@ -22,7 +22,9 @@
     <div class="title">報名表</div>
     <div class="content">
 		<form method="post" action="https://script.google.com/macros/s/AKfycbwhjz0OXaTNTEk-G1QiDC7bs-bdgxijmDSn-9PpVL7GlLO8SfeBrv2iqofIbnBfoxkUYw/exec" name="contact-form">
-        <div class="user-details">
+      <fieldset>
+        <legend>基本資料</legend>  
+      <div class="user-details">
           <div class="input-box">
             <span class="details">姓名*</span>
             <input type="text" name="name" placeholder="請輸入你的姓名" required>
@@ -33,31 +35,34 @@
           </div>
           <div class="input-box">
             <span class="details">電子信箱*</span>
-            <input type="email" name="email" placeholder="接收電子喜帖的信箱" required>
-          </div>
-          <div class="input-box">
-            <span class="details">地址</span>
-            <input type="email" name="email" placeholder="需要紙本喜帖者請填寫">
+            <input type="email" name="email" placeholder="接收電子喜帖的信箱">
           </div>
       </div>
+    </fieldset>
+  
+    <fieldset>
+      <legend>婚宴詳情</legend>
+      <div class="question-area">
       <div class="guest-side">
 				<input type="radio" name="side" id="dot-1" value="man" >
 				<input type="radio" name="side" id="dot-2" value="woman">
-				<span class="side-title" >- 關係*</span>
+				<span class="side-title" id="question">- 關係*</span>
 				<div class="category">
 				  <label for="dot-1">
 				  <span class="dot one"></span>
-				  <span class="side">男方親友</span>
+				  <span class="side">承諺親友</span>
 				</label>
 				<label for="dot-2">
 				  <span class="dot two"></span>
-				  <span class="side">女方親友</span>
+				  <span class="side">純瑛親友</span>
 				</label>
 				</div>
+      </div>
         <div class="attendance-details">
+          <div class="guest-side">
           <input type="radio" name="attendance" id="adot-1" value="yes">
           <input type="radio" name="attendance" id="adot-2" value="no">
-          <span class="attendance-title">- 是否出席婚宴*</span>
+          <span class="attendance-title"  id="question">- 是否出席婚宴*</span>
           <div class="a-category">
             <label for="adot-1">
             <span class="dot one"></span>
@@ -69,25 +74,66 @@
           </label>
           </div>
         </div>
-          <div class="invitation-details">
-            <input type="radio" name="invitation" id="idot-1" value="yes">
-            <input type="radio" name="invitation" id="idot-2" value="no">
-            <span class="invitation-title">- 是否需要紙本喜帖*</span>
-            <div class="i-category">
-              <label for="idot-1">
-              <span class="dot one"></span>
-              <span class="invitation">是</span>
-            </label>
-            <label for="idot-2">
-              <span class="dot two"></span>
-              <span class="invitation">否</span>
-            </label>
+      </div>
+          <div id="meal-details" class="meal-details">
+            <div class="vegetarian-details">
+                <span class="meal-title">- 素食人數*</span>
+                <select name="vegetarian" id="vegetarian">
+                    <option value="0">0 人</option>
+                    <option value="1">1 人</option>
+                    <option value="2">2 人</option>
+                    <option value="3">3 人</option>
+                    <option value="4">4 人</option>
+                </select>
             </div>
+            <div class="non-vegetarian-details">
+                <span class="meal-title">- 葷食人數*</span>
+                <select name="nonVegetarian" id="nonVegetarian">
+                    <option value="0">0 人</option>
+                    <option value="1">1 人</option>
+                    <option value="2">2 人</option>
+                    <option value="3">3 人</option>
+                    <option value="4">4 人</option>
+                </select>
+            </div>
+        
+        <div class="child-seat-details">
+          <span class="details">- 兒童座椅數</span>
+          <select name="childSeat" id="childSeat">
+            <option value="0">0 人</option>
+            <option value="1">1 人</option>
+            <option value="2">2 人</option>
+            <option value="3">3 人</option>
+            <option value="4">4 人</option>
+          </select>
+        </div>
+      </div>
+        <div class="invitation-details" id="invitation-details">
+          <div class="question-area">
+          <input type="radio" name="invitation" id="idot-1" value="yes">
+          <input type="radio" name="invitation" id="idot-2" value="no">
+          <span class="invitation-title" id="question">- 是否需要紙本喜帖*</span>
+          <div class="i-category">
+            <label for="idot-1">
+            <span class="dot one"></span>
+            <span class="invitation">是</span>
+          </label>
+          <label for="idot-2">
+            <span class="dot two"></span>
+            <span class="invitation">否</span>
+          </label>
           </div>
-            <div class="stay-details">
+        </div>
+          <div class="input-box" id="addressField">
+            <span class="details">紙本喜帖寄送地址</span>
+            <input type="text" name="address" placeholder="需要紙本喜帖者請填寫">
+          </div>
+        </div>
+            <div class="stay-details" id="stay-details">
+              <div class="question-area">
               <input type="radio" name="stay" id="sdot-1" value="yes">
               <input type="radio" name="stay" id="sdot-2" value="no">
-              <span class="stay-title">- 當日是否需要住宿* <br>房型: 維多麗亞豪華客房雙人房 (飯店配合價: $4000/晚, 含稅含早餐)</span>
+              <span class="stay-title"><div id="question"> - 當日是否需要住宿* </div>房型: 維多麗亞豪華客房雙人房 (飯店配合價: $4000/晚, 含稅含早餐)</span>
               <div class="s-category">
                 <label for="sdot-1">
                 <span class="dot one"></span>
@@ -98,14 +144,18 @@
                 <span class="stay">否</span>
               </label>
               </div>
-              <div class="user-details">
-              <div class="input-box">
-                <input name="message" rows="20" placeholder="想說的話">
-              </div>
+          </div>
+          </div>
+          </div>
+          <div class="user-details">
+            <div class="input-box">
+              <input name="message" rows="20" placeholder="想說的話">
             </div>
+          </div>
             <div>
               <span class="submited-text">提交中 請稍等片刻</span>          
               </div>
+            </fieldset>
         <div class="button">
           <input type="submit" value="提交">
         </div>

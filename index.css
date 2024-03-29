@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
 }
   body {
     margin: 0;
@@ -46,6 +47,7 @@ h1{
     left: 0; /* 與左側距離為0 */
     z-index: 9999; /* 堆疊順序，確保在最上層 */
     font-size: medium;
+    font-family: 'Poppins',sans-serif;
 }
 .navbar ul{
   list-style-type: none;

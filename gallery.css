@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins',sans-serif;
 }
+
 .nav{
   background-color: #303439; /* 背景顏色 */
   color: #fff; /* 文字顏色 */
@@ -18,23 +20,13 @@
   z-index: 9999; /* 堆疊順序，確保在最上層 */
 }
 
-h1{
-  text-align: center;
-  background-color: #303439; /* 背景顏色 */
-    color: #fff; /* 文字顏色 */
-    padding: 10px 20px; /* 內邊距 */
-    width: 100%; /* 寬度100% */
-    top: 0; /* 與頂部距離為0 */
-    left: 0; /* 與左側距離為0 */
-    z-index: 9999; /* 堆疊順序，確保在最上層 */
-    font-size: medium;
-}
 .navbar ul{
   list-style-type: none;
   background-color: rgb(122, 120, 120);
   padding: 0px;
   margin: 0px;
   overflow: hidden;
+  
 }
 .navbar a{
   color: white;
@@ -48,6 +40,26 @@ h1{
 }
 .navbar li{
   float: left;
+  font-family: "Microsoft JhengHei";
+  font-size: 14px;
+}
+
+h1{
+  text-align: center;
+  background-color: #303439; /* 背景顏色 */
+    color: #fff; /* 文字顏色 */
+    padding: 10px 20px; /* 內邊距 */
+    width: 100%; /* 寬度100% */
+    top: 0; /* 與頂部距離為0 */
+    left: 0; /* 與左側距離為0 */
+    z-index: 9999; /* 堆疊順序，確保在最上層 */
+    font-size: medium;
+    font-family: 'Poppins',sans-serif;
+}
+
+
+#headerTitle{
+  background-color: #b2b4b7; /* 背景顏色 */
 }
 
 
@@ -288,12 +300,6 @@ form .user-details .input-box{
 
 form .button input.no-hover:hover {
   background: linear-gradient(135deg, #bbc4ca, #837f84);
-}
-
-.navbar li{
-  float: left;
-  font-family: "Microsoft JhengHei";
-  font-size: 14px;
 }
 /*
 
