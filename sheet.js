@@ -48,7 +48,7 @@ const additionalElements = document.querySelectorAll('.hideable');
             }
         });
 
-        if (attend && !guestSideChecked) {
+        if (!guestSideChecked) {
             statusLabel.style.display = 'block'
             statusLabel.style.color = 'red'
             statusLabel.textContent = '請填寫關係欄'
