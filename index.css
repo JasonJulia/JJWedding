@@ -8,7 +8,7 @@
   body {
     margin: 0;
     padding: 0;
-    background-image: url('init.jpg');
+    background-image: url('https://res.cloudinary.com/dmxjvj0mh/image/upload/v1711727801/init2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -19,7 +19,7 @@ https://res.cloudinary.com/dmxjvj0mh/image/upload/v1711643834/small-mobile.jpg
 
 @media only screen and (max-width: 768px) {
   body {
-      background-image: url('small-mobile.jpg');
+      background-image: url('https://res.cloudinary.com/dmxjvj0mh/image/upload/v1711727873/small-mobile-text.jpg');
       background-size: cover;
   }
 }
