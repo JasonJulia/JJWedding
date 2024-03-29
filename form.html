@@ -158,11 +158,16 @@
               </div>
             </fieldset>
         <div class="button">
-          <input type="submit" value="提交">
+          <input type="submit" value="提交" onclick="scrollToBottom()">
         </div>
       </form>
     </div>
   </div>
   <script src="sheet.js"></script>
+  <script>
+    function scrollToBottom() {
+      window.scrollTo(0, document.body.scrollHeight);
+    }
+  </script>
 </body>
 </html>

@@ -149,7 +149,6 @@ const additionalElements = document.querySelectorAll('.hideable');
         statusLabel.style.animation = 'none';
         if (!attend ) {
             statusLabel.innerHTML = '提交成功 感謝您的提交 <img src="buddy_icon3.jpg" alt="Icon" style="width: 50px; height: 50px;">';
-            return;
         } else{
             statusLabel.innerHTML = '提交成功 9/7號與您相見 <img src="buddy_icon3.jpg" alt="Icon" style="width: 50px; height: 50px;">';
 
@@ -159,6 +158,7 @@ const additionalElements = document.querySelectorAll('.hideable');
         });
       // 在提交成功後添加“Submit Again”按鈕
       submitButton.value = '提交成功！';
+      window.scrollTo(0, document.body.scrollHeight);
       // 添加到表單中
     } else {
       throw new Error('Submission failed');
